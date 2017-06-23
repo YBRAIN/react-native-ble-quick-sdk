@@ -1,3 +1,7 @@
+ React Native BLE Quick SDK
+ 
+This sdk is in development phase so please don't use it for production releases until stable version of this sdk is released. 
+
 Installation and preparation steps for react-native-ble-quick-sdk. 
 -----------------------------------------------------------------------------------
 
