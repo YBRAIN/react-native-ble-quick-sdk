@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#  File: Prepare custom example app for demo.
+#
+#  Author: Created by Eric.
+
+
+echo "Preparing custom example app for demo.
+echo "--------------------------------------------------------------------------------"
+#cd ..
+#pwd
+cd -- "$(dirname "$BASH_SOURCE")"
+#cd ..
+pwd
+echo off
+cp -r ./example_apps/HelloBLE ../HelloBLE
+
+cd ../HelloBLE
+
+npm install
+
+react-native eject
+
+react-native link
+
+rm -rf ./node_modules/react-native-ble-quick-sdk
+
+cp -r ../react-native-ble-quick-sdk ./node_modules/react-native-ble-quick-sdk
+
+echo "Preparation of custom example app completed  successfully. 
+echo "--------------------------------------------------------------------------------"

@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07481AFC1D2130FE00CE8508 /* NSYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 07481AFB1D2130FE00CE8508 /* NSYLog.m */; };
+		07481AFF1D2138CD00CE8508 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07481AFE1D2138CD00CE8508 /* Utils.m */; };
+		07481B041D22225C00CE8508 /* CommAdminBleRNI.m in Sources */ = {isa = PBXBuildFile; fileRef = 07481B031D22225C00CE8508 /* CommAdminBleRNI.m */; };
+		07B905C31ED2F96200EA26E7 /* CBCharacteristic+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B905C21ED2F96200EA26E7 /* CBCharacteristic+Extensions.m */; };
+		A908F1931CEEFEB500BE1488 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A908F18D1CEEFEB500BE1488 /* CBPeripheral+Extensions.m */; };
+		A908F1941CEEFEB500BE1488 /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A908F18F1CEEFEB500BE1488 /* BLECommandContext.m */; };
+		A908F1951CEEFEB500BE1488 /* BleAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = A908F1911CEEFEB500BE1488 /* BleAdmin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		072718D61EA08BE00024DA07 /* BLECommMgr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BLECommMgr.js; sourceTree = "<group>"; };
+		072718D71EA08C100024DA07 /* BleAdmin.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BleAdmin.js; sourceTree = "<group>"; };
+		073549451EE0301900AC594E /* sdk_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = sdk_config.json; path = "../../../../../../../../react-native-ble-quick-sdk/sdk_config.json"; sourceTree = "<group>"; };
+		07472B091ECADEBB00D93CB3 /* libReactNativeConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactNativeConfig.a; path = "../../../../../react-native-config/ios/build/Debug-iphoneos/libReactNativeConfig.a"; sourceTree = "<group>"; };
+		07472B0D1ECAE28200D93CB3 /* libReactNativeConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactNativeConfig.a; path = "../../../../../react-native-config/ios/build/Debug-iphoneos/libReactNativeConfig.a"; sourceTree = "<group>"; };
+		07472B0F1ECAE32E00D93CB3 /* libReactNativeConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactNativeConfig.a; path = "../../../../../react-native-config/ios/build/Debug-iphoneos/libReactNativeConfig.a"; sourceTree = "<group>"; };
+		07481AFA1D21300100CE8508 /* NSYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSYLog.h; sourceTree = "<group>"; };
+		07481AFB1D2130FE00CE8508 /* NSYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSYLog.m; sourceTree = "<group>"; };
+		07481AFD1D2138CD00CE8508 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		07481AFE1D2138CD00CE8508 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		07481B031D22225C00CE8508 /* CommAdminBleRNI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommAdminBleRNI.m; sourceTree = "<group>"; };
+		07481B051D22227600CE8508 /* CommAdminBleRNI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommAdminBleRNI.h; sourceTree = "<group>"; };
+		0752CCB91EE66CFD00E4D377 /* PayloadDefs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PayloadDefs.json; sourceTree = "<group>"; };
+		0752CCBE1EE66CFD00E4D377 /* PayloadParser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = PayloadParser.js; sourceTree = "<group>"; };
+		07752AF81E83953C00C4C4B9 /* Utils.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Utils.js; sourceTree = "<group>"; };
+		07752AF91E83953C00C4C4B9 /* DLog.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DLog.js; sourceTree = "<group>"; };
+		07752AFA1E83954B00C4C4B9 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../../../package.json; sourceTree = "<group>"; };
+		079A11841E95E60E00FDC7A4 /* AsyncExecutorObj.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = AsyncExecutorObj.js; sourceTree = "<group>"; };
+		07B905C11ED2F94C00EA26E7 /* CBCharacteristic+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBCharacteristic+Extensions.h"; sourceTree = "<group>"; };
+		07B905C21ED2F96200EA26E7 /* CBCharacteristic+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBCharacteristic+Extensions.m"; sourceTree = "<group>"; };
+		07C25BDA1ED6B59E00194DDA /* DevAccessor.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DevAccessor.js; sourceTree = "<group>"; };
+		07C25BDB1ED6B59E00194DDA /* DevAdmin.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DevAdmin.js; sourceTree = "<group>"; };
+		07C25BDC1ED6B59E00194DDA /* DevScanner.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DevScanner.js; sourceTree = "<group>"; };
+		07C25BDD1ED6B59E00194DDA /* DevServiceMgr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DevServiceMgr.js; sourceTree = "<group>"; };
+		07C25BDE1ED6B59E00194DDA /* SDKServiceMgr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = SDKServiceMgr.js; sourceTree = "<group>"; };
+		07C25C161ED6BD5100194DDA /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../../../index.js; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNBluetoothLE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBluetoothLE.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A908F18C1CEEFEB500BE1488 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Extensions.h"; sourceTree = "<group>"; };
+		A908F18D1CEEFEB500BE1488 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Extensions.m"; sourceTree = "<group>"; };
+		A908F18E1CEEFEB500BE1488 /* BLECommandContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECommandContext.h; sourceTree = "<group>"; };
+		A908F18F1CEEFEB500BE1488 /* BLECommandContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECommandContext.m; sourceTree = "<group>"; };
+		A908F1901CEEFEB500BE1488 /* BleAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleAdmin.h; sourceTree = "<group>"; };
+		A908F1911CEEFEB500BE1488 /* BleAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleAdmin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07472B081ECADEBB00D93CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07472B0F1ECAE32E00D93CB3 /* libReactNativeConfig.a */,
+				07472B0D1ECAE28200D93CB3 /* libReactNativeConfig.a */,
+				07472B091ECADEBB00D93CB3 /* libReactNativeConfig.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07752AF61E83953C00C4C4B9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				07752AF71E83953C00C4C4B9 /* utils */,
+				07752AF91E83953C00C4C4B9 /* DLog.js */,
+				079A11841E95E60E00FDC7A4 /* AsyncExecutorObj.js */,
+			);
+			name = common;
+			path = ../../../common;
+			sourceTree = "<group>";
+		};
+		07752AF71E83953C00C4C4B9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				07752AF81E83953C00C4C4B9 /* Utils.js */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		07752B091E83972B00C4C4B9 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0752CCB91EE66CFD00E4D377 /* PayloadDefs.json */,
+				0752CCBE1EE66CFD00E4D377 /* PayloadParser.js */,
+			);
+			name = protocols;
+			path = ../../../protocols;
+			sourceTree = "<group>";
+		};
+		07752B141E84C78D00C4C4B9 /* comm_admins */ = {
+			isa = PBXGroup;
+			children = (
+				07752B151E84C78D00C4C4B9 /* ble */,
+			);
+			name = comm_admins;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		07752B151E84C78D00C4C4B9 /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				072718D61EA08BE00024DA07 /* BLECommMgr.js */,
+				072718D71EA08C100024DA07 /* BleAdmin.js */,
+				07752B3A1E84C7FE00C4C4B9 /* android */,
+				07752B2A1E84C7D900C4C4B9 /* ios */,
+			);
+			path = ble;
+			sourceTree = "<group>";
+		};
+		07752B2A1E84C7D900C4C4B9 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				07481B051D22227600CE8508 /* CommAdminBleRNI.h */,
+				07481B031D22225C00CE8508 /* CommAdminBleRNI.m */,
+				A908F1901CEEFEB500BE1488 /* BleAdmin.h */,
+				A908F1911CEEFEB500BE1488 /* BleAdmin.m */,
+				07481AFA1D21300100CE8508 /* NSYLog.h */,
+				07481AFB1D2130FE00CE8508 /* NSYLog.m */,
+				07481AFD1D2138CD00CE8508 /* Utils.h */,
+				07481AFE1D2138CD00CE8508 /* Utils.m */,
+				A908F18C1CEEFEB500BE1488 /* CBPeripheral+Extensions.h */,
+				A908F18D1CEEFEB500BE1488 /* CBPeripheral+Extensions.m */,
+				07B905C11ED2F94C00EA26E7 /* CBCharacteristic+Extensions.h */,
+				07B905C21ED2F96200EA26E7 /* CBCharacteristic+Extensions.m */,
+				A908F18E1CEEFEB500BE1488 /* BLECommandContext.h */,
+				A908F18F1CEEFEB500BE1488 /* BLECommandContext.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		07752B3A1E84C7FE00C4C4B9 /* android */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		07C25BD91ED6B59E00194DDA /* sdk_api */ = {
+			isa = PBXGroup;
+			children = (
+				07C25BDE1ED6B59E00194DDA /* SDKServiceMgr.js */,
+				07C25BDD1ED6B59E00194DDA /* DevServiceMgr.js */,
+				07C25BDA1ED6B59E00194DDA /* DevAccessor.js */,
+				07C25BDB1ED6B59E00194DDA /* DevAdmin.js */,
+				07C25BDC1ED6B59E00194DDA /* DevScanner.js */,
+			);
+			name = sdk_api;
+			path = ../../../sdk_api;
+			sourceTree = "<group>";
+		};
+		07C25BDF1ED6B5BD00194DDA /* device_services */ = {
+			isa = PBXGroup;
+			children = (
+				07C25BE01ED6B5BD00194DDA /* profile */,
+			);
+			name = device_services;
+			path = ../../../device_services;
+			sourceTree = "<group>";
+		};
+		07C25BE01ED6B5BD00194DDA /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				07C25BE11ED6B5BD00194DDA /* chr */,
+				07C25BE21ED6B5BD00194DDA /* svc */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		07C25BE11ED6B5BD00194DDA /* chr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = chr;
+			sourceTree = "<group>";
+		};
+		07C25BE21ED6B5BD00194DDA /* svc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = svc;
+			sourceTree = "<group>";
+		};
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libRNBluetoothLE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				07C25C161ED6BD5100194DDA /* index.js */,
+				073549451EE0301900AC594E /* sdk_config.json */,
+				07752AFA1E83954B00C4C4B9 /* package.json */,
+				07C25BD91ED6B59E00194DDA /* sdk_api */,
+				07C25BDF1ED6B5BD00194DDA /* device_services */,
+				07752B091E83972B00C4C4B9 /* protocols */,
+				07752B141E84C78D00C4C4B9 /* comm_admins */,
+				07752AF61E83953C00C4C4B9 /* common */,
+				134814211AA4EA7D00B7C361 /* Products */,
+				07472B081ECADEBB00D93CB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* RNBluetoothLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBluetoothLE" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNBluetoothLE;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libRNBluetoothLE.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNBluetoothLE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* RNBluetoothLE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A908F1931CEEFEB500BE1488 /* CBPeripheral+Extensions.m in Sources */,
+				07481AFC1D2130FE00CE8508 /* NSYLog.m in Sources */,
+				A908F1951CEEFEB500BE1488 /* BleAdmin.m in Sources */,
+				07481AFF1D2138CD00CE8508 /* Utils.m in Sources */,
+				07B905C31ED2F96200EA26E7 /* CBCharacteristic+Extensions.m in Sources */,
+				A908F1941CEEFEB500BE1488 /* BLECommandContext.m in Sources */,
+				07481B041D22225C00CE8508 /* CommAdminBleRNI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_NAME = RNBluetoothLE;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/../../../../react-native/React/**";
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_NAME = RNBluetoothLE;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/../../../../react-native/React/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNBluetoothLE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNBluetoothLE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNBluetoothLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBluetoothLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}

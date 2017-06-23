@@ -1,0 +1,43 @@
+// Example of custom BLE packet definition
+{
+    "pkt_data_1": { // pkt1
+
+        "field1" : {
+            "POS":0,
+            "LEN":1,
+            "FMT":"uint8",
+            
+        },
+        "field2" : {
+            "POS":1,
+            "LEN":1,
+            "FMT":"uint8",
+            
+        },
+        "field3" : {
+            "POS":2,
+            "LEN":1,
+            "FMT":"uint8",
+            
+        },
+        "field4" : {
+            "POS":3,
+            "LEN":1,
+            "FMT":"uint8",
+            
+        },
+    },
+
+
+        
+
+
+}
+
+
+
+
+
+
+
+

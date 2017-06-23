@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#  File: Update sdk and custom example app.
+#
+#  Author: Created by Eric.
+
+
+echo "Updating sdk and custom example app"
+echo "--------------------------------------------------------------------------------"
+#cd ..
+#pwd
+cd -- "$(dirname "$BASH_SOURCE")"
+#cd ..
+pwd
+echo off
+
+rm -rf ../HelloBLE/app/screens/BLEHelloWorldView.js
+cp -r ./example_apps/HelloBLE/app/screens/BLEHelloWorldView.js ../HelloBLE/app/screens/BLEHelloWorldView.js
+
+cd ../HelloBLE
+
+
+rm -rf ./node_modules/react-native-ble-quick-sdk
+cp -r ../react-native-ble-quick-sdk ./node_modules/react-native-ble-quick-sdk
+
+echo "Updation of sdk and custom example app completed successfully "
+echo "--------------------------------------------------------------------------------"

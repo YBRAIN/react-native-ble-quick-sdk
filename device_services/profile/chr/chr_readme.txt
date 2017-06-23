@@ -1,0 +1,1 @@
+JSON BLE Characteristics location
