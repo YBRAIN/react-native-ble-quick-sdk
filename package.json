@@ -1,14 +1,14 @@
 {
   "name": "react-native-ble-quick-sdk",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A React Native BLE SDK for BDS based ble profile with source autogeneration feature",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eric2036/"
+    "url": "https://github.com/YbrainInc/react-native-ble-quick-sdk"
   },
   "bugs": {
-    "url": "https://github.com/eric2036/issue"
+    "url": "https://github.com/YbrainInc/issue"
   },
     "scripts": {
     "postinstall" : "node ./bds_plugin/install-plugin-to-bds.js",
@@ -20,7 +20,7 @@
         "react-native-config": "^0.4.2",
         "babel-plugin-react-native-config": "0.0.3",
         "int64-buffer": "^0.1.9",
-		"fast-xml-parser": "github:eric2036/fast-xml-parser#attr-no-prefix-branch"
+		"fast-xml-parser": "github:YbrainInc/fast-xml-parser#attr-no-prefix-branch"
     },
   "keywords": [
     "react-native",
