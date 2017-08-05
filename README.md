@@ -1,9 +1,9 @@
 ## React Native BLE Quick SDK
 
 ## Requirements
-React Native Framework from Facebook
-Bluetooth Developer Studio IDE from Bluetooth SIG organization
-BLE profile (xml files) of bluetooth device designed using using Bluetooth Developer Studio.
+* React Native Framework from Facebook
+* Bluetooth Developer Studio IDE from Bluetooth SIG organization
+* BLE profile (xml files) of bluetooth device designed using using Bluetooth Developer Studio.
 
 ## Caution: 
 This sdk is in development phase so please don't use it for production releases until stable version of this sdk is released. 
@@ -36,15 +36,15 @@ Note: This step needs admin privilege or it will fail.
 	b.) npm run generate-ble-profile --bleProfileType="service" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project path i.e. C:\\mybdsprojectpath\\}"
 ```
 
-Note: 
-	Argument 1 : bleProfileType is type of BLE profile e.g. service or characteristic. You must run generate-ble-profile command
-				 for bleProfileType="characteristic" and again for bleProfileType="service".
-				 
-	Argument 2 : bleNamespace is your BLE device profile's namespace as per Bluetooth Developer Studio.
+* Note:
 
-	Argument 3 : bdsPrjRootPath is root folder of your Bluetooth Developer Studio.
-	
-	Please use double slash while specifying path.
+  Argument-1:  bleProfileType is type of BLE profile e.g. service or characteristic. You must run generate-ble-profile 			              command for bleProfileType="characteristic" and again for bleProfileType="service".
+
+  Argument-2:  bleNamespace is your BLE device profile's namespace as per Bluetooth Developer Studio.
+
+  Argument-3:  bdsPrjRootPath is root folder of your Bluetooth Developer Studio.
+
+Please use double slash while specifying path.
 
 	
 ## Generate BLE device specific API Source
