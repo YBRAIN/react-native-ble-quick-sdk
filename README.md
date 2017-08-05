@@ -81,6 +81,126 @@ react-native link react-native-ble-quick-sdk
 - Check the "Build Phases"of your project and add "libRNBluetoothLE.a" in the "Link Binary With Libraries" section.
 
 
-## Basic Example
+## Your Devcie Specific Example
+--------------------------------
+	Please refer to folder {app_project_root}\node_modules\react-native-ble-quick-sdk\example\ to find auto generated sample app using this sdk.
+
+	
+## Basic Example 
 -----------------
-	You may refer to folder {app_project_root}\node_modules\react-native-ble-quick-sdk\example\ to find auto generated sample app using this sdk.
+** Below example is for for Battery Service as per Bluetooth Specification for type org.bluetooth.service.battery_service(0x180F)
+	
+```js
+
+import React, {Component} from 'react'; 
+ import { 
+     Text, 
+     View, 
+     Alert, 
+     StyleSheet, 
+     ScrollView 
+ } from 'react-native'; 
+ import Button from 'apsl-react-native-button' 
+ import {getSDKServiceMgrInstance} from 'react-native-ble-quick-sdk';
+
+ var deviceId = ''; // Assign your device's iOS specific CBUUID here. You can find it in the scan api's console log output by your device name.
+ 
+ var objSDKSvcMgr = getSDKServiceMgrInstance(false);
+  
+ export default class BLEHelloWorldView extends Component { 
+
+     constructor(props) { 
+         super(props); 
+     } 
+
+     async scanNearbyBleDevices() { 
+			let listenerScan = (deviceID, deviceName, rssi) => {
+				console.log(' Device Found iOS CBUUID = ' + deviceID + '/' + deviceName + '[' + rssi + ']');
+ 			};
+         try { 
+             await objSDKSvcMgr.getDevAdmin().getDeviceScanner().scanAllServices(5, listenerScan); 
+             console.log('Initiated scanning task successfully'); 
+         } 
+         catch (err) { 
+             console.log('Failed to start scanning task'); 
+         } 
+     } 
+
+     async connect2BleDevice() { 
+         try { 
+             await objSDKSvcMgr.getDevAdmin().getDeviceAccessor().connectToDevice(deviceId); 
+             console.log('device connected'); 
+         } 
+         catch (err) { 
+             console.log('device connection failed'); 
+         } 
+     } 
+
+
+     async readBatteryLevel() { 
+
+         let listenerBatteryLevel = (BatteryLevel) => { 
+             Alert.alert(' BatteryLevel is ' + BatteryLevel); 
+         }; 
+
+         try { 
+             await objDevSvcMgr.getService('BatteryService').get_battery_level(listenerBatteryLevel); 
+             console.log('readBatteryLevel api call success'); 
+         } 
+         catch (err) { 
+             console.log('readBatteryLevel api call failed'); 
+         } 
+
+     } 
+
+     render() { 
+         return ( 
+             <ScrollView style={styles.page}> 
+                 <Text style={styles.tabText}>BLE Hello World </Text> 
+                 <Button 
+                     style={styles.Button} 
+                     onPress={ () => { 
+                         this.scanNearbyBleDevices(); 
+                     } 
+                     }> 
+                     1-Scan 
+                 </Button> 
+                 <Button 
+                     style={styles.Button} 
+                     onPress={ () => { 
+                         this.connect2BleDevice(); 
+                     } 
+                     }> 
+                     2-Connect 
+                 </Button> 
+                 <Button 
+                     style={styles.Button} 
+                     onPress={ () => { 
+                         this.readBatteryLevel(); 
+                     } 
+                     }> 
+                     3-Read BatteryLevel 
+                 </Button> 
+             </ScrollView> 
+         ); 
+     } 
+ } 
+ var styles = StyleSheet.create({ 
+	  page: {
+		  backgroundColor: '#edf0f5',
+		  flex: 1,
+	  }, 
+     tabText: { 
+         color: 'black', 
+         margin: 5, 
+    }, 
+     Button: { 
+         backgroundColor: 'green', 
+         margin: 30 
+     }, 
+
+ }); 
+ 
+
+```
+	

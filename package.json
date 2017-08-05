@@ -1,6 +1,6 @@
 {
   "name": "react-native-ble-quick-sdk",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A React Native BLE SDK for BDS based ble profile with source autogeneration feature",
   "main": "index",
   "repository": {
