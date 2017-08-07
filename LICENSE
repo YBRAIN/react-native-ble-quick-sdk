@@ -188,6 +188,7 @@
 
    Copyright 2017 Ybrain Inc. (https://github.com/YbrainInc)
    Author Eric S (https://github.com/eric2036)
+   Borrowed Native part from github.com/innoveit/react-native-ble-manager and github.com/don/cordova-plugin-ble-central.
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
