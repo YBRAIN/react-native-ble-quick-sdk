@@ -3,7 +3,7 @@ Installations steps for the example app.
 
 Auto Preparation Approach
 ------------------------------
-1. Copy  react-native-ble-quick-sdk to mac
+1. Copy the react-native-ble-quick-sdk folder to mac
 2. Change directory to react-native-ble-quick-sdk 
 3. Open terminal and Run ./prepareExample script in react-native-ble-quick-sdk folder
 4.  Go to HelloBLE\ios\ and open Xcode project and select team or code sign profile.
