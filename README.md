@@ -203,4 +203,15 @@ import React, {Component} from 'react';
  
 
 ```
-	
+
+## Contributing
+
+If you find any problems, please [open an issue](https://github.com/YbrainInc/react-native-ble-quick-sdk/issues/new) or submit a fix as a pull request.
+
+## License
+
+[Apache License 2.0](LICENSE)
+
+## Credits
+
+Native part of the project has been borrowed from [cordova-plugin-ble-central](github.com/don/cordova-plugin-ble-central) and  [react-native-ble-manager](github.com/innoveit/react-native-ble-manager). If your react native app project requires to communicate directly with the BLE device at the low level then you should check it out to see if this project [react-native-ble-quick-sdk](https://github.com/YbrainInc/react-native-ble-quick-sdk/)  or [react-native-ble-manager](github.com/innoveit/react-native-ble-manager) is better fit for you.
