@@ -12,7 +12,7 @@
     "int64-buffer": "^0.1.9",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
-	"react-native-ble-quick-sdk": "git+https://github.com/eric2036/react-native-ble-quick-sdk.git#development",
+    "react-native-ble-quick-sdk": "0.0.9",
     "react-native-deprecated-custom-components": "^0.1.0",
     "react-native-localization": "^0.1.30",
     "react-native-simple-toast": "0.0.6"
