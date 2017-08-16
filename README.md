@@ -65,6 +65,10 @@ Note: This step needs admin privilege or it will fail.
 
 5. If code generation and ble profile generation have completed successfully then React Native BLE Quick SDK is ready to be consumed by BLE Client (Central)react native app to communicate with your BLE device.
 
+
+## Running on iOS (Android not yet supported, To be supported soon )
+* Copy React Native project including \node_modules\react-native-ble-quick-sdk\ from Windows Machine to Mac Machine to prepare and run on iOS. 
+
 ## Link the native library
 ---------------------------
 you need to link the native library. You can either:
