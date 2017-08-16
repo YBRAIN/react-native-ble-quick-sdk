@@ -1,9 +1,12 @@
 ## React Native BLE Quick SDK
+React Native BLE Customizable SDK for your device's BLE profile, services and characteristics designed using Bluetooth Developer Studio IDE.
 
 ## Requirements
 * React Native Framework from Facebook
 * Bluetooth Developer Studio IDE from Bluetooth SIG organization
 * BLE profile (xml files) of bluetooth device designed using using Bluetooth Developer Studio.
+* Windows 7/8.1/10 and Mac OS Yosemite/El Capitan/Sierra .
+
 
 ## Caution: 
 This sdk is in development phase so please don't use it for production releases until stable version of this sdk is released. 
@@ -28,7 +31,7 @@ This sdk is in development phase so please don't use it for production releases 
 
 Note: This step needs admin privilege or it will fail.
  
-3. Go to terminal, change to directory "{app_project_root}\node_modules\react-native-ble-quick-sdk\" and execute below two command as below: 
+3. Go to terminal, change to directory "{app_project_root}\node_modules\react-native-ble-quick-sdk\" and execute below two command sequentially as below: 
 
 ```shell
 	a.) npm run generate-ble-profile --bleProfileType="characteristic" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project path i.e. C:\\mybdsprojectpath\\}"
@@ -36,15 +39,17 @@ Note: This step needs admin privilege or it will fail.
 	b.) npm run generate-ble-profile --bleProfileType="service" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project path i.e. C:\\mybdsprojectpath\\}"
 ```
 
-* Note:
+* Note 1:
 
-  Argument-1:  bleProfileType is type of BLE profile e.g. service or characteristic. You must run generate-ble-profile 			              command for bleProfileType="characteristic" and again for bleProfileType="service".
+  Argument-1:  bleProfileType is type of BLE profile e.g. service or characteristic. You must run generate-ble-profile command for 					bleProfileType="characteristic" and again for bleProfileType="service".
 
   Argument-2:  bleNamespace is your BLE device profile's namespace as per Bluetooth Developer Studio.
 
-  Argument-3:  bdsPrjRootPath is root folder of your Bluetooth Developer Studio.
+  Argument-3:  bdsPrjRootPath is root folder of your Bluetooth Developer Studio (i.e. where your *.bds file resides). Please note that 
+			   this is not the root path of your react native app project.
 
-Please use double slash while specifying path.
+* Note 2:
+	Please use double slash while specifying path.
 
 	
 ## Generate BLE device specific API Source
@@ -52,7 +57,7 @@ Please use double slash while specifying path.
 	
 1. Open your Bluetooth Developer Studio project.
 
-2. Go to Menu Tools -> Generate Code -> Select "Client" for "Generate Code for" option -> Select Plugin "React Native BLE Quick SDK for Client"
+2. Go to Menu Tools -> Generate Code -> Select "Client" for "Generate Code for" option -> Select Plugin "React Native Client Plugin"
 
 3. Set output path in "Save To " field to {app_project_root}\node_modules\react-native-ble-quick-sdk\.
 
@@ -214,4 +219,4 @@ If you find any problems, please [open an issue](https://github.com/YbrainInc/re
 
 ## Credits
 
-Native part of the project has been borrowed from [cordova-plugin-ble-central](github.com/don/cordova-plugin-ble-central) and  [react-native-ble-manager](github.com/innoveit/react-native-ble-manager). If your react native app project requires to communicate directly with the BLE device at the low level then you should check it out to see if this project [react-native-ble-quick-sdk](https://github.com/YbrainInc/react-native-ble-quick-sdk/)  or [react-native-ble-manager](github.com/innoveit/react-native-ble-manager) is better fit for you.
+Native part of the project has been borrowed from [cordova-plugin-ble-central](github.com/don/cordova-plugin-ble-central) and  [react-native-ble-manager](github.com/innoveit/react-native-ble-manager). If your react native app project requires to communicate directly with the BLE device at the low level then you should check it out to see if this project [React Native BLE Quick SDK](https://github.com/YbrainInc/react-native-ble-quick-sdk/)  or [react-native-ble-manager](github.com/innoveit/react-native-ble-manager) is better fit for you.
