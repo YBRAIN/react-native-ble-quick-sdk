@@ -34,9 +34,9 @@ Note: This step needs admin privilege or it will fail.
 3. Go to terminal, change to directory "{app_project_root}\node_modules\react-native-ble-quick-sdk\" and execute below two command sequentially as below: 
 
 ```shell
-	a.) npm run generate-ble-profile --bleProfileType="characteristic" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project path i.e. C:\\mybdsprojectpath\\}"
+	a.) npm run generate-ble-profile --bleProfileType="characteristic" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project profile folder i.e. C:\\mybdsprojectpath\\}"
 
-	b.) npm run generate-ble-profile --bleProfileType="service" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project path i.e. C:\\mybdsprojectpath\\}"
+	b.) npm run generate-ble-profile --bleProfileType="service" --bleNamespace="com.{yourcompanynamespace}" --bdsPrjRootPath="{Your Bluetooth Developer Studio project profile folder i.e. C:\\mybdsprojectpath\\}"
 ```
 
 * Note 1:
@@ -45,7 +45,7 @@ Note: This step needs admin privilege or it will fail.
 
   Argument-2:  bleNamespace is your BLE device profile's namespace as per Bluetooth Developer Studio.
 
-  Argument-3:  bdsPrjRootPath is root folder of your Bluetooth Developer Studio (i.e. where your *.bds file resides). Please note that 
+  Argument-3:  bdsPrjRootPath is root folder of your Bluetooth Developer Studio profile project (i.e. where your *.bds file resides). Please note that 
 			   this is not the root path of your react native app project.
 
 * Note 2:
